@@ -1,0 +1,26 @@
+<html>
+    <script lang="javascript">
+        function leng()
+        {
+         var length=document.getElementById("l").value;
+         var len=length;
+         document.getElementById("result").innerHTML="Length ="+len;
+
+        }
+        function breadth()
+        {
+         var breadth=document.getElementById("b").value;
+         var bre=breadth;
+         document.getElementById("result").innerHTML="Breadth ="+bre;
+        }
+    </script>
+    <form name="f1">
+        Length :<input type="text" id="l"/><br><br>
+        Breadth :<input type="text" id="b"/><br><br>
+
+        <input type="button" value="length" onclick="leng();"><br><br>
+        <input type="button" value="breadth" onclick="breadth();"><br><br>
+
+        <span id="result">Ans</span>
+    </form>
+</html>

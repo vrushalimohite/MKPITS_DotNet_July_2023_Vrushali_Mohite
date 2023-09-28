@@ -1,0 +1,33 @@
+<html>
+    <script lang="javascript">
+        function calculate()
+        {
+            var num1=parse(document.getElelmentById("n1").value);
+            var num2=parse(document.getElelmentById("n2").value);
+        
+            var op=document.getElementById("op").value;
+        
+        var Ans=0;
+        if(operator=="+")
+        {
+            Ans=num1+num2;
+        }
+        else if(operator=="-")
+        {
+            Ans=num1-num2;
+        }
+        else if(operator=="*")
+        {
+            Ans=num1*num2;
+        }
+        document.getElementById("result").innerHTML="result"+Ans;
+    }
+    </script>
+    <form name="f1">
+      Enter number :<input type="text" id="n1"/><br><br>
+      Enter number :<input type="text" id="n2"/><br><br>
+      operator :<input type="text" id="op"/><br><br>
+      <input type="button" value="Ok" onclick="calculate();">
+      <p id="result">Result</p>
+        </form>
+</html>

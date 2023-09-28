@@ -1,0 +1,52 @@
+<html>
+    <script lang="javascript">
+        function sub1()
+        {
+            var sub1=document.getElementById("s1").value;
+            var sub2=document.getElementById("s2").value;
+            var sub3=document.getElementById("s3").value;
+            var total=parseInt(sub1)+parseInt(sub2)+parseInt(sub3);
+            document.getElementById("res").innerHTML="Total ="+total;
+        }
+        function sub2()
+        {
+            var sub1=document.getElementById("s1").value;
+            var sub2=document.getElementById("s2").value;
+            var sub3=document.getElementById("s3").value;
+            var total=parseInt(sub1)+parseInt(sub2)+parseInt(sub3);
+
+            var per=total/300.*100.0;
+            document.getElementById("res").innerHTML="per ="+per;
+        }
+        function sub3()
+        {
+            var sub1=document.getElementById("s1").value;
+            var sub2=document.getElementById("s2").value;
+            var sub3=document.getElementById("s3").value;
+            var total=parseInt(sub1)+parseInt(sub2)+parseInt(sub3);
+
+            if(total>=200)
+            {
+                document.getElementById("res").innerHTML="A++";
+
+            }
+            else(total<=200)
+            {
+               document.getElementById("res").innerHTML="B";
+            }
+
+        }
+    </script>
+    <body>
+        <h3>wap to accept 3 subject marks and display total, per, and grade.<hr></h3>
+        Sub1 :<input type="text" id="s1"><br><br>
+        Sub2 :<input type="text" id="s2"><br><br>
+        Sub3 :<input type="text" id="s3"><br><br>
+        <input type="button" value="Total" onclick="sub1();"/>
+        <input type="button" value="per" onclick="sub2();"/>
+        <input type="button" value="Grade" onclick="sub3();"/><br><br>
+        <p id="res">RESULT</p>
+
+
+    </body>
+</html>

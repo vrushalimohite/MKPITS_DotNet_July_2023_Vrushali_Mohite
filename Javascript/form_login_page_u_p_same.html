@@ -1,0 +1,26 @@
+<html>
+  <script lang="javascript">
+        function login()
+        {
+            var u=document.getElementById("u1").value;
+            var p=document.getElementById("p1").value;
+            if(u=="admin" && p=="admin")
+            {
+            document.getElementById("res").innerHTML="LOGIN SUCCESFULLY";
+            }
+            else
+            {
+            document.getElementById("res").innerHTML="INCORRECT DETAILS";
+            }
+        }
+    </script>
+    <body>
+        <h3>LOGIN<hr></h3>
+        <form name="f1">
+            Username :<input type="text" id="u1"/><br><br>
+            Password :<input type="password" id="p1"/><br><br>
+            <input type="button" value="Submit" onclick="login();"/><br><br>
+            <span id="res">---</span>
+        </form>
+
+</html>

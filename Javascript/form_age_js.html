@@ -1,0 +1,22 @@
+<html>
+    <script lang="javascript">
+        function age()
+        {
+            var age=document.getElementById("a1").value;
+            if(age>="18")
+            {
+                document.getElementById("result").innerHTML="Elegible for vote";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML="Not eligible"
+            }
+
+        }
+    </script>
+    <form name="f1">
+        Age :<input type="text" id="a1"><br><br>
+        <input type="button" value="ok"  onclick="age();">
+        <p id="result">Result</p>
+    </form>
+</html>

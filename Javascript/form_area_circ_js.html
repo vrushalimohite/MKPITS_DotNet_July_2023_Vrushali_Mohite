@@ -1,0 +1,28 @@
+<html>
+    <script lang="javascript">
+        
+       // var rad=radius;
+        //document.getElementById()
+        function area()
+        {
+            var radius=document.getElementById("r").value;
+            var ans=3.14*radius*radius;
+            document.getElementById("result").innerHTML="Area ="+ans;
+
+        }
+        function cicr()
+        {
+            var radius=document.getElementById("r").value;
+
+            var ans=2*3.14*radius;
+            document.getElementById("result").innerHTML="circumference ="+ans;
+        }
+    </script>
+    <form name="f1">
+        Radius :<input type="text" id="r"><br><br>
+
+        <input type="button" value="area" onclick="area();">
+        <input type="button" value="circ" onclick="cicr();"><br><br>
+  <span id="result">Result--</span>
+    </form>
+</html>
