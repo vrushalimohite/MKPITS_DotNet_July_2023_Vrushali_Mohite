@@ -1,0 +1,50 @@
+<html>
+    <script lang="javascript">
+        function check()
+        {
+            var u=document.getElementById("t1").value;
+            var p=document.getElementById("t2").value;
+            if(u=="" && p=="")
+            {
+                document.getElementById("u1").innerHTML="Please Enter Username";
+                document.getElementById("p1").innerHTML="Please Enter Password";
+            }
+            else if(u=="")
+            {
+                document.getElementById("u1").innerHTML="Please Enter Username";
+                document.getElementById("p1").innerHTML="";
+            }
+            else if(p=="")
+            {
+                document.getElementById("u1").innerHTML="";
+                document.getElementById("u1").innerHTML="Please Enter Password";
+            }
+            else
+            {
+                document.getElementById("u1").innerHTML="";
+                document.getElementById("p1").innerHTML="";
+                if(u=="admin" && p=="admin")
+                {
+                document.getElementById("res").innerHTML="Login Successful";
+                }
+                else
+                {
+                document.getElementById("res").innerHTML="Invalid Details";
+                }
+
+            }
+        }
+    </script>
+
+    <body>
+        <h3>1- create a login form and write code for validation<hr></h3>
+        <form name="f1">
+        Enter Username:<input type="text" id="t1"/>
+        <span id="u1" style="color:red">*</span><br><br>
+        Enter Password:<input type="text" id="t2">
+        <span id="p1" style="color:red">*</span><br><br>
+        <input type="button" value="Submit" onclick="check();"/>
+        <p id="res">-----</p>
+        </form>
+    </body>
+</html>
