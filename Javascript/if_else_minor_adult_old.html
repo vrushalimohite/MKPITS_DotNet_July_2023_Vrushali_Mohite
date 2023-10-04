@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>wap to accept age from the user and display whether he is minor, adult or old.
+        </h3>
+        Enter Age:<input type="text" id="a1"><br><br>
+        <button type="button" onclick="display();">Submit</button><br><br><br>
+        <span id="result">----</span>
+    </form>
+</body>
+<script lang="javascript">
+    function display()
+    {
+        var a=document.getElementById("a1").value;
+        if(a<18)
+        {
+            document.getElementById("result").innerHTML="Enter age is minor";
+        }
+        else if(a>=18 && a<=50)
+        {
+            document.getElementById("result").innerHTML="Enter age is Adult";
+
+        }
+        else if(a>60)
+        {
+            document.getElementById("result").innerHTML="Enter age is Old";
+
+        }
+    }
+</script>
+</html>
