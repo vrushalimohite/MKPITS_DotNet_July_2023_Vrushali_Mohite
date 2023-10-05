@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>9 wap to accept empname and basic salary calculate hra ie 23% of basicsalary, 
+        da ie 43% of basic salary then calculate total salary =hra+da+basicsalary</h2>
+        <form name="f1" class="form-group">
+            <input type="text" id="t1" class="form-control" placeholder="Employee name"><br><br>
+            <input type="text" id="t2" class="form-control" placeholder="Basic salary"><br><br>
+            <button type="button" onclick="check();" class="form-control mt-2">submit</button><br><br>
+            <div class="container mt-2" id="hra">HRA</div>
+            <div class="container mt-2" id="da">DA</div>
+            <div class="container mt-2" id="total-salary">Total salary</div>
+        </form>
+</body>
+<script lang="javascript">
+    function check()
+    {
+        var empname=parseInt(document.getElementById("t1").value);
+        var bs=parseInt(document.getElementById("t2").value);
+        var hra=bs*0.23;
+        var da=bs*0.43;
+        var ts=hra+da+bs;
+
+        document.getElementById("hra").innerHTML="HRA :"+hra;
+        document.getElementById("da").innerHTML="Da :"+da;
+        document.getElementById("total-salary").innerHTML="Total salary :"+ts;
+        
+
+
+    }
+
+
+
+
+</script>
+</html>
