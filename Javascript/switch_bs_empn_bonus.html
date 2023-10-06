@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <p>switch statement</p>
+    </div>
+    <div class="container">
+        <form class="form-group">
+            <label for="e1">Enter Name</label>
+            <input type="text" id="e1" class="form-control" placeholder="Enter name">
+            <label for="e1">Enter Basic salary</label>
+            <input type="text" id="b1" class="form-control" placeholder="Enter Basic salary">
+
+            <label for="e1">Enter Designation</label>
+            <input type="text" id="d1" class="form-control" placeholder="Enter name">
+            <button type="button" onclick="display();" class="form-control btn-primary mt-4">Submit</button>
+            <span id="result" class="form-control mt-4">Result</span>
+
+
+        </form>
+    </div>
+</body>
+<script lang="javascript">
+    function display()
+    {
+
+        var empname=document.getElementById("e1").value;
+        var bsal=document.getElementById("b1").value;
+        var Designation=document.getElementById("d1").value;
+        var bonus;
+        switch(Designation)
+        {
+            case 'm':
+              bonus=5000;
+              break;
+            case 'c':
+              bonus=2000;
+              break;
+
+            case 'p':
+              bonus=1000;
+              break;
+            
+            
+            default:
+             alert("invalid designation")
+             break;
+         
+       }
+     var total=parseInt(bsal)+parseInt(bonus);
+     document.getElementById("result").innerHTML="Bonus+Basic sal=Total sal:"+total;
+     //document.getElementById("result").innerHTML="Emploee Name :"+empname;
+
+
+
+    }
+</script>
+</html>

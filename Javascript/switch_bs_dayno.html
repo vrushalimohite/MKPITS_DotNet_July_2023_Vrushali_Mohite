@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter no<input type="text" id="t1"><br><br>
+    <button type="button" onclick="display();">submit</button><br><br>
+    <span id="res">result</span>
+</body>
+<script lang="javascript">
+    function display()
+    {
+        var result;
+        var dayno=parseInt(document.getElementById("t1").value);
+        switch(dayno)
+        {
+            case 1:
+                result="monday";
+                break;
+                case 2:
+                result="tuesday";
+                break;
+
+                case 3:
+                result="wednesday";
+                break;
+
+                case 4:
+                result="thursday";
+                break;
+
+                case 5:
+                result="friday";
+                break;
+
+                case 6:
+                result="saturday";
+                break;
+
+                case 7:
+                result="sunday";
+                break;
+
+                default:
+                result="invalid no";
+                break;
+
+
+
+        }
+        document.getElementById("res").innerHTML=result;
+
+    }
+</script>
+</html>

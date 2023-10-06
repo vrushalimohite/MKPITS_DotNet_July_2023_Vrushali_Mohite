@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+      Enter letter :  <input type="text" id="ch"><br><br>
+        <button type="button" onclick="display();">OK</button><br><br>
+        
+    </form>
+    
+</body>
+<script lang="javascript">
+    function display()
+    {
+        var ch=document.getElementById("ch").value;
+        switch(ch)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            
+                alert("it is vowel");
+                break;
+                default:
+                alert("it is not vowel");
+
+
+
+        }
+    }
+</script>
+</html>
