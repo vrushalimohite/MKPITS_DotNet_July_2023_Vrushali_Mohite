@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script lang="javascript">
+    var r="";
+    function check()
+    {
+        r=document.getElementById("t1").value;
+        document.getElementById("res").innerHTML=r;
+    }
+</script>
+<body>
+    Enter first name:<input tyoe="text" id="t1" onkeypress="check();">
+    Enter Last name:<input type="text" id="t2" name="t2">
+    <input type="button" value="Submit"><br><br>
+    <span id="res">--</span>
+    
+</body>
+</html>
