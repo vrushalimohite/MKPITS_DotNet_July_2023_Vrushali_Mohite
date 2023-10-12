@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace program
 {
     class divide
@@ -12,7 +12,7 @@ namespace program
             Console.WriteLine("Enter num2");
             num2 = Convert.ToInt32(Console.ReadLine());
             divide = (float)num1 / (float)num2;
-            Console.WriteLine("Result :" + divide);
+            Console.WriteLine("Result" + divide);
             Console.ReadKey();
         }
     }
