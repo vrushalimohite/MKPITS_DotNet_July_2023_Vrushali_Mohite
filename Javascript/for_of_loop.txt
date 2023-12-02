@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Code";
+        let size=0;
+        for(let i of str)
+        {
+            document.write("i"+i);
+            size++;
+        }
+        document.write("size of string :"+size);
+    </script>
+</body>
+</html>

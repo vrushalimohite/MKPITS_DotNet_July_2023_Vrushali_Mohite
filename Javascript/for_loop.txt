@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=0;i<5;i++)   //initilazation,increment or decrement,updation
+        {
+            document.write(i);
+        }
+        let count =1;
+        for(count=1;count<10;count++)
+        {
+            document.write("code");
+        }
+        let sum=0;
+        for(let i=1;i<=5;i++)
+        {
+            document.write(i);
+            sum=sum+i;
+        }
+        document.write("sum"+sum);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=1
+        do
+        {
+        document.write(i);  //at least one time check code in do while loop
+        i++;
+
+        }
+        while(i>10);
+        let count=1
+        do
+        {
+        document.write(count); 
+        count++;
+
+        }
+        while(count<10);
+    </script>
+</body>
+</html>
