@@ -1,0 +1,16 @@
+create table studd(Rollno int , FirstName varchar(100),LastName varchar(100),City varchar(100),State varchar(100))
+insert into studd values(1,'Mayuri','Kale','Nagpur','Mah')
+insert into studd values(6,'Vrushali','Mohite','Wardha','Mah')
+insert into studd values(3,'Sayli','Kapse','Bhandara','Mp')
+insert into studd values(5,'Priya','Matre','Amravti','Mp')
+insert into studd values(2,'Anuj','Kalmankar','Arvi','Mp')
+insert into studd values(7,'Rushi','Sawarkare','Highanghat','Mah')
+select * from studd where Rollno=5
+create table studdd (Rollno int , FirstName varchar(100),LastName varchar(100),City varchar(100),State varchar(100))
+insert into studdd values(1,'Mayuri','Kale','Nagpur','Mah')
+insert into studdd values(6,'Vrushali','Mohite','Wardha','Mah')
+insert into studdd values(3,'Sayli','Kapse','Bhandara','Mp')
+insert into studdd values(5,'Priya','Matre','Amravti','Mp')
+insert into studdd values(2,'Anuj','Kalmankar','Arvi','Mp')
+insert into studdd values(7,'Rushi','Sawarkare','Highanghat','Mah')
+select * from studdd where Rollno>3 and Rollno<6
