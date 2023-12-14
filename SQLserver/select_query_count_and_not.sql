@@ -20,3 +20,4 @@ insert into emp1 values(2,'Anuj','Kalmankar','Arvi','Mp')
 insert into emp1 values(7,'Rushi','Sawarkare','Highanghat','Mah')
 select FirstName,COUNT (*) from emp1 where State<>'Mah' group by FirstName
 
+ 
