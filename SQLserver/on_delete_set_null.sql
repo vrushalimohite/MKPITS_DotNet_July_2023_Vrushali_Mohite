@@ -5,9 +5,7 @@ create table vendors(vendorsid int ,name varchar(10) not null,id int,
   insert into vendors_group values('jagu')
  insert into vendors_group values('RAj')
 
-select * from vendors_group
-select * from vendors
-
+  
 insert into vendors values(4,'rajesh',1)
 insert into vendors values(10,'raj',2)
 insert into vendors values(9,'koal',2)

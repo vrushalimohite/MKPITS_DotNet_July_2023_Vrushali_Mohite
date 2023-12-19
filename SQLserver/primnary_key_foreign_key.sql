@@ -9,7 +9,7 @@ select * from vendors_group
 select * from vendors
 
 insert into vendors values(4,'rajesh',1)
-insert into vendors values(5,'raj',3)
+insert into vendors values(5,'raj',2)
 
 drop table vendors
 drop table vendors_group
