@@ -7,7 +7,7 @@ insert into TableNation(NationID ,NationName)values
 						(852,'nepal'),
 						(963,'japan');
 select * from TableNation
-
+----------------------------------------------------------------------------
 create table TableState(StateID int primary key,
                         NationID int,
 						StateName varchar(500),
@@ -20,7 +20,7 @@ insert into TableState (StateID,NationID,StateName)values
 					   (852,852,'karnataka'),
 					   (741,963,'madhy pradesh');
 select * from TableState 
-
+----------------------------------------------------------------------
 create table TableCity(CityID int primary key,
                        StateID int,
 					   CityName varchar(500)not null,
@@ -33,7 +33,7 @@ insert into TableCity(CityID,StateID,CityNAme)values
 					  (15,456,'Katol'),
 					  (16,123,'arvi');
  select * from TableCity
-
+ ------------------------------------------------------------------------------
  create table TableCourseRegDetail(CourseRegID int primary key,
                                    Categorylnd int unique,
 								   FullName varchar(1500),
@@ -46,7 +46,7 @@ insert into TableCourseRegDetail(CourseRegID,Categorylnd,FullName,Genderlnd )val
 								(852,16,'mrunal gajbye',16),
 								(963,17,'pooja kote',18);
 select * from TableCourseRegDetail
-
+---------------------------------------------------------------------------------
 create table TableRegAddress(RegAddressID int primary key,
                              CourseRegID int ,
 							 NationID int,
@@ -68,7 +68,7 @@ insert into TableRegAddress(RegAddressID,
 							 (5,852,963,741,16),
 							 (6,456,789,123,14);
 select * from TableRegAddress
-
+--------------------------------------------------------------------
 
 create table TableFeeDetail(FeeID int primary key,
                             CourseRegID int,
@@ -79,10 +79,21 @@ create table TableFeeDetail(FeeID int primary key,
 							PaidDate DateTime,
 							foreign key (CourseRegID)references TableCourseRegDetail(CourseRegID));
 insert into TableFeeDetail(FeeID,CourseRegID,TotalAmount,Minper,PaidAmount,BalAmount,PaidDate)values
-                          (179,123,550,11,400,150,'2023-12-14 05:30:07'),       
+                          (123,123,550,11,400,150,2023-12-14),       
 						  (13,456,500,14,300,200,1001-12-12),
 						  (14,789,650,15,500,150,2200-12-07),
 						  (15,789,700,116,500,200,2023-05-12),
 						  (16,123,800,14,500,300,2022-12-14),
 						  (17,852,900,15,500,400,2023-12-15);
 select * from  TableFeeDetail
+
+
+select * from TableNation
+select * from TableState 
+ select * from TableCity
+ select * from  TableCourseRegDetail
+ select * from TableRegAddress
+ select * from  TableFeeDetail
+
+
+
