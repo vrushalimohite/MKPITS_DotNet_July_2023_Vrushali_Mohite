@@ -36,6 +36,8 @@ drop table TableProductCategory
  INSERT INTO TableProduct VALUES(109,4,'Boat',5000)
  select * from TableProduct
 
+ select * from TableInvoiceDetails
+
 
 
 
